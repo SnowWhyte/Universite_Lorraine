@@ -1,0 +1,22 @@
+all_seconds = input("How many seconds?       ")
+
+seconds = all_seconds % 60
+all_seconds = all_seconds / 60
+
+minutes = all_seconds % 60
+all_seconds = all_seconds / 60
+
+hours = all_seconds % 24
+all_seconds = all_seconds / 24
+
+days = all_seconds % 7
+all_seconds = all_seconds / 7
+
+weeks = all_seconds % 52
+all_seconds = all_seconds / 52
+
+years = all_seconds % 365
+all_seconds = all_seconds / 365
+
+print years, "years", weeks, "weeks", days, "days", hours, "hours" , minutes, "minutes", seconds, "seconds"
+
